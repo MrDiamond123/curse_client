@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'curse_client/cli'
+
+CurseClient::CLI.start(ARGV)
