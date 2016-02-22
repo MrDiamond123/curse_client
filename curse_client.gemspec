@@ -21,6 +21,11 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 1.9.3"
 
+  spec.add_runtime_dependency "thor", "~> 0.19"
+  spec.add_runtime_dependency "bzip2-ffi", "~> 1.0"
+  spec.add_runtime_dependency "rubyzip", "~> 1.2"
+  spec.add_runtime_dependency "http-cookie", "~> 1.0"
+
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
