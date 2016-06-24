@@ -108,7 +108,7 @@ module CurseClient
     end
 
     def escape(url)
-      URI.escape(URI.escape(url), "[]")
+      URI.escape(URI.escape(url), "[]^")
     end
 
   end
