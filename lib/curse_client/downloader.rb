@@ -11,7 +11,7 @@ module CurseClient
         when Net::HTTPSuccess
           save_response(response, path, &block)
         when Net::HTTPRedirection
-          url = URI.escape(response['location'], "[]")
+          url = URI.escape(response['location'], "[]^")
           return fetch(url, path, &block)
         else
           response.error!
