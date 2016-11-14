@@ -31,7 +31,7 @@ module CurseClient
       modpack = modpacks.
         select { |m| m[:name] == name }.
         first
-      addon(modpack[:id])
+      modpack && addon(modpack[:id])
     end
 
     def addon(id)
