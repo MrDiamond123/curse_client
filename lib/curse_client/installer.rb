@@ -64,6 +64,7 @@ module CurseClient
         # extract
         zip.each do |entry|
           file_path = "#{path}/#{entry.name.gsub(/\A#{overrides_name}\//, "")}"
+          FileUtils.mkpath(File.dirname(file_path))
           entry.extract(file_path) { true }
         end
         manifest
